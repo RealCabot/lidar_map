@@ -19,7 +19,7 @@ iface enxa0cec808aa14 inet static
 address 192.168.0.15
 netmask 255.255.255.0 
 ```
-**enxa0cec808aa14 is my USB port name, I think everyone's should be the same, but you may need to check in ifconfig while USB plugged in. If using ethernet port, will have to use different configuration. (Should only be Chris)**
+-enxa0cec808aa14 is my USB port name, I think everyone's should be the same, but you may need to check in ifconfig while USB plugged in. If using ethernet port, will have to use different configuration. (Should only be Chris)
 -----------------------------
 NOW, if you have an older computer like Chris that has an ether jack, do this instead:
 add the following to the interface file:
