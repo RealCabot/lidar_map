@@ -22,14 +22,14 @@ netmask 255.255.255.0
 May need to restart computer
 ```
 roscore
-rosrun urg_node urg_node _ip_address:=’192.168.0.10’
+rosrun urg_node urg_node _ip_address:='192.168.0.10'
 ```
 Rviz -> make fixed frame “/laser” and add LaserScan by topic from “/scan”
 
 To create LIDAR map:
 ```
 Roscore
-Rosrun urg_node urg_node _ip_address:=’192.168.0.10’
+Rosrun urg_node urg_node _ip_address:='192.168.0.10'
 roslaunch hector_slam_launch tutorial.launch
 ```
 Push CaBot slowly down desired mapping route (should see map start to form in rviz)
