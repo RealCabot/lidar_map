@@ -1,4 +1,4 @@
-Connecting to Hokuyo: https://github.com/mrsd16teamd/loco_car/wiki/Localization
+~~Connecting to Hokuyo: https://github.com/mrsd16teamd/loco_car/wiki/Localization~~
 
 Install following ROS packages (git clone):
 - Laser_proc: https://github.com/ros-perception/laser_proc
