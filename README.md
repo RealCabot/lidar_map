@@ -40,3 +40,18 @@ rosrun map_server map_saver -f desired_map_name
 ```
 
 This command will save a .png and .yaml file of your map that can be used on the navigation stack. 
+
+
+NOW, if you have an older computer like Chris that has an ether jack, do this instead:
+add the following to the interface file:
+```
+auto eth0:0
+iface eth0:0 inet static
+address 192.168.0.15
+netmask 255.255.255.0
+```
+The rest are the same #LIT
+
+note, even though the address is set to 192.168.0.15 in the interface file, you still launch the LIDAR with the address 192.168.0.10
+
+#EVENMORELIT
