@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<launch>
-  <node type="detect_node" pkg="detect_node" name="detect_node" output="screen">
-    <!--<remap from="scan" to="my_cloud"/>
-    <param name="max_scans" type="int" value="400" />
-    <param name="fixed_frame" type="string" value="map" />-->
-  </node>
- 
-</launch>
