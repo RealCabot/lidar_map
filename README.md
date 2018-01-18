@@ -1,5 +1,9 @@
 # A tool of building up the map
 
+## Lidar configuration
+
+Refer to the [wiki page](https://github.com/RealCabot/lidar_map/wiki/Lidar-configuration).
+
 ## Package dependencies
 
 Install following ROS packages in your catkin workspace:
@@ -20,4 +24,4 @@ After you've reached the end of the mapped route, run:
 rosrun map_server map_saver -f desired_map_name
 ```
 
-This command will save a .png and .yaml file of your map that can be used on the navigation stack. 
+This command will save a `.pgm` and `.yaml` file of your map that can be used on the navigation stack. 
