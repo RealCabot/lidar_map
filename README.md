@@ -20,8 +20,13 @@ roslaunch lidar_map build_map.launch
 Push CaBot slowly down desired mapping route (should see map start to form in rviz)
 
 After you've reached the end of the mapped route, run:
+
 ```
 rosrun map_server map_saver -f desired_map_name
 ```
 
 This command will save a `.pgm` and `.yaml` file of your map that can be used on the navigation stack. 
+
+## Note
+
+This package's mapping part is directly copied from demo, thus containing many confusing and inaccurate parts in the configurations and launch files. 
