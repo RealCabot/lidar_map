@@ -13,10 +13,11 @@ Install following ROS packages in your catkin workspace:
 - [hector_slam](https://github.com/tu-darmstadt-ros-pkg/hector_slam)
 
 ## How to use me
+
 ```
-roslaunch lidar_map urg_lidar.launch
-roslaunch lidar_map build_map.launch
+roslaunch map_server gmapping.launch
 ```
+
 Push CaBot slowly down desired mapping route (should see map start to form in rviz)
 
 After you've reached the end of the mapped route, run:
@@ -26,6 +27,14 @@ rosrun map_server map_saver -f desired_map_name
 ```
 
 This command will save a `.pgm` and `.yaml` file of your map that can be used on the navigation stack. 
+
+### `hector_slam`
+
+You can also use `hector_slam` instead of `gmapping`. To do so, run
+```
+roslaunch lidar_map urg_lidar.launch
+roslaunch lidar_map build_map.launch
+```
 
 ## Note
 

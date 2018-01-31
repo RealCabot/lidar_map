@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<launch>
+
+    <include file="$(find localizer)/launch/get_odom.launch"/>
+    <include file="$(find lidar_map)/launch/urg_lidar.launch"/>
+    <include file="$(find localizer)/launch/urdf_publisher.launch"/>
+    
+    <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+    </node>
+
+</launch>
