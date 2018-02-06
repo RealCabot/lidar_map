@@ -4,8 +4,18 @@
     <include file="$(find localizer)/launch/get_odom.launch"/>
     <include file="$(find lidar_map)/launch/urg_lidar.launch"/>
     <include file="$(find localizer)/launch/urdf_publisher.launch"/>
-    
-    <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" /> 
+    <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen"> 
+        <rosparam>
+            xmin: -30
+            ymin: -30
+            xmax: 30
+            ymax: 30
+            delta: 0.02
+            maxUrange: 30
+        </rosparam>
     </node>
+    <node name="rviz" pkg="rviz" type="rviz"
+    args="-d $(find lidar_map)/launch/gmapping.rviz"/>
 
 </launch>
