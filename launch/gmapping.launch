@@ -4,7 +4,6 @@
     <include file="$(find localizer)/launch/get_odom.launch"/>
     <include file="$(find lidar_map)/launch/urg_lidar.launch"/>
     <include file="$(find localizer)/launch/urdf_publisher.launch"/>
-    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" /> 
     <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen"> 
         <rosparam>
             xmin: -30
