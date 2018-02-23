@@ -50,9 +50,10 @@
   <!--   <doc_depend>doxygen</doc_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
   <exec_depend>map_server</exec_depend>
-  <exec_depend>hector_geotiff</exec_depend>
   <exec_depend>urg_node</exec_depend>
+  <exec_depend>localizer</exec_depend>
   <exec_depend>tf</exec_depend>
+  <exec_depend>gmapping</exec_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
