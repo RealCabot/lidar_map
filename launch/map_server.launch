@@ -1,7 +1,7 @@
 <launch>
 
-  <arg name="map_file" default="$(find lidar_map)/maps/yanda_map.yaml"/>
-
+  <!-- arg name="map_file" default="$(find lidar_map)/maps/yanda_map.yaml"/ -->
+  <arg name="map_file" default="$(find lidar_map)/maps/masterpiece.yaml"/>
   <!-- Run the map server -->
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
